@@ -1,0 +1,13 @@
+/logs/
+npm-debug.log
+node_modules/
+coverage/
+.idea/
+run/
+.DS_Store
+*.swp
+
+# 添加npm install后自动生成的文件进行忽略
+.travis.yml
+appveyor.yml
+package-lock.json
