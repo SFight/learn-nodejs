@@ -16,7 +16,7 @@ function checkIsbn(isbn) {
   }
 
   const len = isbn.length;
-  if (len !== 10 && len !== 13) { return 0; }
+  if (len !== 10 && len !== 13) { return false; }
   const rc = isbnCompute(isbn, len);
   if (isbn[len - 1] !== rc) {
     /* ISBN尾数与计算出来的校验码不符 */
