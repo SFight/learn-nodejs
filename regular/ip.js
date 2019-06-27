@@ -89,3 +89,12 @@ function validIpSegments(ipsegment) {
   const reg = /^(?:(?:[0-9]|[1-9]\d|1\d{2}|2[0-4]\d|25[0-5])(?:\.(?:[0-9]|[1-9]\d|1\d{2}|2[0-4]\d|25[0-5])){3}-(?:[0-9]|[1-9]\d|1\d{2}|2[0-4]\d|25[0-5])(?:\.(?:[0-9]|[1-9]\d|1\d{2}|2[0-4]\d|25[0-5])){3}(?:$|,))+$/;
   return reg.test(ipsegment);
 }
+
+module.exports = {
+  ipToNumber,
+  numberToIp,
+  checkIP,
+  lanIP,
+  validIpSegments,
+  validIpSegmentsOverlap
+};
